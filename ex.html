@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY FORM</title>
+
+</head>
+<body>
+
+<H1 style="color:black;font-size:50px;">STUDENT FORM</H1>
+<form>
+<table>
+<tr>
+<td>
+<label for="name">NAME</lable>
+</td>
+
+<td>
+<input type="text" id="name" onblur="myfunc()">
+</td
+</tr>
+<script>
+function myfunc()
+{
+var x=document.getElementById("fname");
+x.value=x.value.toUpperCase();
+
+}
+</script>
+
+<tr>
+<td>
+<lable for="email">E-MAIL</label>
+</td>
+<td>
+<input type="text" id="email" name="email">
+</td>
+<td>
+<button type="button" >check</button>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<label for="age">AGE</label>
+</td>
+<td>
+<input type="number" id="age" name="age">
+</td>
+</tr>
+
+<tr>
+<td>
+<label for="gender">GENDER</label>
+</td>
+<td>
+<label>
+<input type = "radio" name="f" value:"female">FEMALE
+</label><br>
+<input type="radio" name="m" value:"male">MALE
+</label>
+</td>
+
+
+<tr>
+<td>
+<label for="SPORTS">HOBBIES</label>
+</td>
+<td>
+<label>
+<input type="checkbox" id="cricket" value="cricket">CRICKET
+</label><br>
+<label>
+<input type="checkbox" id="foot" value="foot">FOOTBALL
+</label><br>
+<input type="checkbox" id="shuttle" value="shuttle">SHUTTLE
+</label>
+</td>
+</tr>
+
+<tr>
+<td>
+<lable for="country">STATE</lable>
+</td>
+<td>
+<select id="city" name="city">
+<option disabled selected>------Choose STATE</option>
+<optgroup label="INDIA">
+<option></option>
+<option>TamilNadu</option>
+<option>Kerala</option>
+<option>karnataka</option>
+<option>Gujarat</option>
+</optgroup>
+<optgroup lable="others">
+<option>Assam</option>
+<option>Megalaya</option>
+<option>Nepal</option>
+</optgroup>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>
+<lable for="pass">PASSWORD</label>
+</td>
+<td>
+<input type="password" id="pass" value="password">
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td>
+<button type="button" name="button">RESET</button>
+</td>
+</tr>
+
+
+
+</table>
+</form>
+</body>
+</html>
